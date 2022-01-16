@@ -17,6 +17,7 @@ public class PaletteEditor extends Application {
 
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
+		stage.setTitle("Palette Editor");
 		stage.show();
 	}
 
