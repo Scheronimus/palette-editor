@@ -15,7 +15,7 @@
 					<items>
 						<MenuItem mnemonicParsing="false" text="Exit" />
 					</items>
-				</Menu>				
+				</Menu>
 				<Menu mnemonicParsing="false" text="Help">
 					<items>
 						<MenuItem mnemonicParsing="false" text="About" />
@@ -23,23 +23,19 @@
 				</Menu>
 			</menus>
 		</MenuBar>
-
+		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
 		<TextArea layoutX="121.0" layoutY="63.0" maxHeight="25.0"
 			minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
-		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
-
-		<Button layoutX="269.0" layoutY="95.0" mnemonicParsing="false"
-			prefHeight="69.0" prefWidth="149.0" text="Print" />
 		<Label layoutX="40.0" layoutY="108.0" text="Palette" />
-		<Label layoutX="40.0" layoutY="138.0" text="Colis" />
-		<Spinner fx:id="paletteSpinner" editable="true" layoutX="121.0"
-			layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0"
-			prefWidth="71.0">
+		<Spinner fx:id="paletteSpinner" editable="true"
+			layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0"
+			prefHeight="25.0" prefWidth="71.0">
 			<valueFactory>
 				<SpinnerValueFactory.IntegerSpinnerValueFactory
 					min="0" max="9999" />
 			</valueFactory>
 		</Spinner>
+		<Label layoutX="40.0" layoutY="138.0" text="Colis" />
 		<Spinner fx:id="colisSpinner" editable="true" layoutX="121.0"
 			layoutY="134.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0"
 			prefWidth="71.0">
@@ -48,5 +44,7 @@
 					min="0" max="9999" />
 			</valueFactory>
 		</Spinner>
+		<Button layoutX="269.0" layoutY="95.0" mnemonicParsing="false"
+			prefHeight="69.0" prefWidth="149.0" text="Print" />
 	</children>
 </Pane>
