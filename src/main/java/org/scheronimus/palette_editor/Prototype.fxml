@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TextArea layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" text="jhjhg" />
+		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
+		<MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="448.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<Button layoutX="269.0" layoutY="95.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="149.0" text="Print" />
+		<Label layoutX="39.0" layoutY="108.0" text="Palette" />
+		<Label layoutX="39.0" layoutY="138.0" text="Colis" />
+		<TextArea layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0" text="jhjhg" />
+		<TextArea layoutX="121.0" layoutY="134.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0" />
+	</children>
+</Pane>
