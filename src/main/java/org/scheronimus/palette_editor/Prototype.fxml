@@ -7,18 +7,21 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0"
 	prefWidth="448.0" xmlns="http://javafx.com/javafx/8"
-	xmlns:fx="http://javafx.com/fxml/1">
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.scheronimus.palette_editor.PrototypeController">
 	<children>
 		<MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="448.0">
 			<menus>
 				<Menu mnemonicParsing="false" text="File">
 					<items>
-						<MenuItem mnemonicParsing="false" text="Exit" />
+						<MenuItem mnemonicParsing="false"
+							onAction="#closeApplication" text="Exit" />
 					</items>
 				</Menu>
 				<Menu mnemonicParsing="false" text="Help">
 					<items>
-						<MenuItem mnemonicParsing="false" text="About" />
+						<MenuItem fx:id="aboutMenu" mnemonicParsing="false"
+							onAction="#printAbout" text="About" />
 					</items>
 				</Menu>
 			</menus>
@@ -32,7 +35,7 @@
 			prefHeight="25.0" prefWidth="71.0">
 			<valueFactory>
 				<SpinnerValueFactory.IntegerSpinnerValueFactory
-					min="0" max="9999" />
+					max="9999" min="0" />
 			</valueFactory>
 		</Spinner>
 		<Label layoutX="40.0" layoutY="138.0" text="Colis" />
@@ -41,7 +44,7 @@
 			prefWidth="71.0">
 			<valueFactory>
 				<SpinnerValueFactory.IntegerSpinnerValueFactory
-					min="0" max="9999" />
+					max="9999" min="0" />
 			</valueFactory>
 		</Spinner>
 		<Button layoutX="269.0" layoutY="95.0" mnemonicParsing="false"
