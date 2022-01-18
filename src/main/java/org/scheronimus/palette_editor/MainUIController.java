@@ -8,13 +8,16 @@ import javafx.scene.control.Alert.AlertType;
 
 public class MainUIController {
 
+	String VERSION = "v.0.0.1";
+
 	// Event Listener on MenuItem[#aboutMenu].onAction
 	@FXML
 	public void printAbout(ActionEvent event) {
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("About Palette Editor");
 		alert.setHeaderText(null);
-		alert.setContentText("Palette Editor\nVersion xx\nCopytight (C) 2022 Scheronimus");
+
+		alert.setContentText("Palette Editor\nVersion " + VERSION + "\nCopytight (C) 2022 Scheronimus");
 
 		alert.showAndWait();
 	}
