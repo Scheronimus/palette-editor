@@ -26,4 +26,9 @@ public class MainUIController {
 	public void closeApplication(ActionEvent event) {
 		Platform.exit();
 	}
+
+	@FXML
+	public void printPage(ActionEvent event) {
+		PagePrinter.requestPrint();
+	}
 }
