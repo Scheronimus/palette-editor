@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
-public class PrototypeController {
+public class MainUIController {
 
 	// Event Listener on MenuItem[#aboutMenu].onAction
 	@FXML
