@@ -21,7 +21,7 @@
 			</menus>
 		</MenuBar>
 		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
-		<TextArea layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
+		<TextArea fx:id="clientTextArea" layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
 		<Label layoutX="40.0" layoutY="108.0" text="Palette" />
 		<Spinner fx:id="paletteSpinner" editable="true" layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
 			<valueFactory>
