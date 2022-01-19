@@ -1,4 +1,4 @@
-package org.scheronimus.palette_editor;
+package org.scheronimus.palette_editor.model;
 
 public class Model {
 	String customer;

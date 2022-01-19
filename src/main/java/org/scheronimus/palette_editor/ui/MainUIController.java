@@ -1,4 +1,7 @@
-package org.scheronimus.palette_editor;
+package org.scheronimus.palette_editor.ui;
+
+import org.scheronimus.palette_editor.model.Model;
+import org.scheronimus.palette_editor.printer.PagePrinter;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

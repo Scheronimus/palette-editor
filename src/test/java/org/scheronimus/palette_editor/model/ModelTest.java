@@ -1,4 +1,4 @@
-package org.scheronimus.palette_editor;
+package org.scheronimus.palette_editor.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

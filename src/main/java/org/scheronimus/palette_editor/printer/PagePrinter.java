@@ -1,10 +1,13 @@
-package org.scheronimus.palette_editor;
+package org.scheronimus.palette_editor.printer;
 
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
 import java.awt.print.PrinterJob;
+
+import org.scheronimus.palette_editor.model.Model;
+import org.scheronimus.palette_editor.model.OutOfBoundException;
 
 public class PagePrinter implements Printable {
 
