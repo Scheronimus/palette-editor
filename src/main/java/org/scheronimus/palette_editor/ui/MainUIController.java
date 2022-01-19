@@ -44,7 +44,6 @@ public class MainUIController {
 		Integer palette = paletteSpinner.getValue();
 		Integer colis = colisSpinner.getValue();
 
-		System.out.println(customer + " " + palette + " " + colis);
 		PagePrinter.requestPrint(new Model(customer, palette, colis));
 
 	}

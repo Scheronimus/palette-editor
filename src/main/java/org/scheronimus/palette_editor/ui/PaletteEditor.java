@@ -12,7 +12,7 @@ public class PaletteEditor extends Application {
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/scheronimus/palette_editor/MainUI.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/scheronimus/palette_editor/ui/MainUI.fxml"));
 		Parent root = loader.load();
 
 		Scene scene = new Scene(root);
