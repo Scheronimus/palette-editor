@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.scheronimus.palette_editor.ui.MainUIController">
+	<children>
+		<MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="448.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Exit" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#printAbout" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
+		<TextArea fx:id="clientTextArea" layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
+		<Label layoutX="40.0" layoutY="108.0" text="Palette" />
+		<Spinner fx:id="paletteSpinner" editable="true" layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
+			<valueFactory>
+				<SpinnerValueFactory.IntegerSpinnerValueFactory max="9999" min="0" />
+			</valueFactory>
+		</Spinner>
+		<Label layoutX="40.0" layoutY="138.0" text="Colis" />
+		<Spinner fx:id="colisSpinner" editable="true" layoutX="121.0" layoutY="134.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
+			<valueFactory>
+				<SpinnerValueFactory.IntegerSpinnerValueFactory max="9999" min="0" />
+			</valueFactory>
+		</Spinner>
+		<Button layoutX="269.0" layoutY="95.0" mnemonicParsing="false" onAction="#printPage" prefHeight="69.0" prefWidth="149.0" text="Print" />
+	</children>
+</Pane>

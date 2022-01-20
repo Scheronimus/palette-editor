@@ -1,4 +1,4 @@
-package org.scheronimus.palette_editor;
+package org.scheronimus.palette_editor.ui;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ public class PaletteEditor extends Application {
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/scheronimus/palette_editor/MainUI.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/scheronimus/palette_editor/ui/MainUI.fxml"));
 		Parent root = loader.load();
 
 		Scene scene = new Scene(root);
@@ -21,7 +21,7 @@ public class PaletteEditor extends Application {
 		stage.show();
 	}
 
-	public static void main(String[] args) {
+	public static void launchUI() {
 		launch();
 	}
 
