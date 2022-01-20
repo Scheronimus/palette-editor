@@ -1,5 +1,6 @@
 package org.scheronimus.palette_editor.printer;
 
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
@@ -31,8 +32,10 @@ public class PagePrinter implements Printable {
 			return NO_SUCH_PAGE;
 		}
 
-		g.drawString(customer, 100, 100);
-		g.drawString(lineForPageNumber, 100, 200);
+		g.setFont(new Font("TimesRoman", Font.PLAIN, 34));
+
+		g.drawString(customer, 100, 150);
+		g.drawString(lineForPageNumber, 150, 300);
 
 		return PAGE_EXISTS;
 	}
