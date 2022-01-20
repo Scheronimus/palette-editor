@@ -18,7 +18,7 @@ public class Model {
 
 	public String generateLineForPageNumber(int page) throws OutOfBoundException {
 		if (page > (getTotalNumberOfElements() - 1)) {
-			throw new OutOfBoundException("Page index bigger that the amount of items");
+			throw new OutOfBoundException("Page index bigger than the amount of items");
 		}
 		String s;
 		if (page < palette) {
