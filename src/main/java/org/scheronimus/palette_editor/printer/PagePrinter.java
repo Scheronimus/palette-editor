@@ -32,10 +32,10 @@ public class PagePrinter implements Printable {
 			return NO_SUCH_PAGE;
 		}
 
-		g.setFont(new Font("TimesRoman", Font.PLAIN, 34));
+		g.setFont(new Font("TimesRoman", Font.PLAIN, 45));
 
-		g.drawString(customer, 100, 150);
-		g.drawString(lineForPageNumber, 150, 300);
+		g.drawString(customer, 75, 150);
+		g.drawString(lineForPageNumber, 100, 300);
 
 		return PAGE_EXISTS;
 	}
