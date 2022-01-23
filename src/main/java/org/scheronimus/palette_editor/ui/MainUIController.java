@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 
 public class MainUIController {
 
-	static final String VERSION = "v.1.0.0";
+	String VERSION = "v.1.0.0";
 	@FXML
 	TextField clientTextField;
 	@FXML

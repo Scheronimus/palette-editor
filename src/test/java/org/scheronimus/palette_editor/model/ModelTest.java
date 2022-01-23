@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-class ModelTest {
+public class ModelTest {
 
 	@Test
-	void testGetCustomer() {
+	public void testGetCustomer() {
 
 		Model m = new Model("Alpha", null, null);
 		assertEquals("Alpha", m.getCustomer());
@@ -21,7 +21,7 @@ class ModelTest {
 	}
 
 	@Test
-	void testGenerateLineForPageNumber() throws OutOfBoundException {
+	public void testGenerateLineForPageNumber() throws OutOfBoundException {
 		Model m = new Model("Alpha", 2, 3);
 
 		assertEquals("1 Pal von [ 2 Pal + 3 Colis ]", m.generateLineForPageNumber(0));
@@ -44,7 +44,7 @@ class ModelTest {
 	}
 
 	@Test
-	void testGenerateLineForPageNumber_OutOfBound() {
+	public void testGenerateLineForPageNumber_OutOfBound() {
 
 		assertThrows(OutOfBoundException.class, () -> {
 			Model m = new Model("Alpha", 2, 3);
@@ -69,7 +69,7 @@ class ModelTest {
 	}
 
 	@Test
-	void testGetTotalNumberOfElements() {
+	public void testGetTotalNumberOfElements() {
 		Model m = new Model("Alpha", 2, 3);
 		assertEquals(5, m.getTotalNumberOfElements());
 
