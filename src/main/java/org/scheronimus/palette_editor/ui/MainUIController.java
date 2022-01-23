@@ -9,13 +9,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Spinner;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 public class MainUIController {
 
-	String VERSION = "v.0.0.1";
+	static final String VERSION = "v.1.0.0";
 	@FXML
-	TextArea clientTextArea;
+	TextField clientTextField;
 	@FXML
 	Spinner<Integer> paletteSpinner;
 	@FXML
@@ -40,11 +40,18 @@ public class MainUIController {
 
 	@FXML
 	public void printPage(ActionEvent event) {
-		String customer = clientTextArea.getText();
+		String customer = clientTextField.getText();
 		Integer palette = paletteSpinner.getValue();
 		Integer colis = colisSpinner.getValue();
 
-		PagePrinter.requestPrint(new Model(customer, palette, colis));
-
+		if (palette + colis > 0) {
+			PagePrinter.requestPrint(new Model(customer, palette, colis));
+		} else {
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("WARNING");
+			alert.setHeaderText(null);
+			alert.setContentText("Nothing to print");
+			alert.showAndWait();
+		}
 	}
 }

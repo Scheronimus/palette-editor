@@ -15,21 +15,21 @@
 				</Menu>
 				<Menu mnemonicParsing="false" text="Help">
 					<items>
-						<MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#printAbout" text="About" />
+						<MenuItem mnemonicParsing="false" onAction="#printAbout" text="About" />
 					</items>
 				</Menu>
 			</menus>
 		</MenuBar>
 		<Label layoutX="40.0" layoutY="67.0" text="Kunde" />
-		<TextArea fx:id="clientTextArea" layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
+		<TextField fx:id="clientTextField" layoutX="121.0" layoutY="63.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="295.0" />
 		<Label layoutX="40.0" layoutY="108.0" text="Palette" />
-		<Spinner fx:id="paletteSpinner" editable="true" layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
+		<Spinner fx:id="paletteSpinner" layoutX="121.0" layoutY="104.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
 			<valueFactory>
 				<SpinnerValueFactory.IntegerSpinnerValueFactory max="9999" min="0" />
 			</valueFactory>
 		</Spinner>
 		<Label layoutX="40.0" layoutY="138.0" text="Colis" />
-		<Spinner fx:id="colisSpinner" editable="true" layoutX="121.0" layoutY="134.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
+		<Spinner fx:id="colisSpinner" layoutX="121.0" layoutY="134.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="71.0">
 			<valueFactory>
 				<SpinnerValueFactory.IntegerSpinnerValueFactory max="9999" min="0" />
 			</valueFactory>
